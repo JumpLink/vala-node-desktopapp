@@ -7,9 +7,20 @@ lib-cov
 *.pid
 *.gz
 
+*.css
+
 pids
 logs
+log
 results
+main
+core
+tmp
+
+views
+public/images
+images
+
 
 node_modules
 npm-debug.log

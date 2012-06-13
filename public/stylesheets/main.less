@@ -1,0 +1,25 @@
+@import "bootstrap.less";
+@import "responsive-1200px-min.less";
+body {
+	position: relative;
+	padding-top: 70px;
+}
+.a-navbar-button {
+	text-align: center;
+}
+.image-navbar-button {
+	height: 24px;
+	width: 24px;
+	padding-bottom: 5px;
+}
+//navbar.less Links
+.navbar .nav > li > a {
+  float: none;
+  // Vertically center the text given @navbarHeight
+  @elementHeight: 20px;
+  padding: ((@navbarHeight - @elementHeight) / 4 - 1) 10px ((@navbarHeight - @elementHeight) / 4 + 1); //modified
+  line-height: 19px;
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
