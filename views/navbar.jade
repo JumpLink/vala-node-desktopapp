@@ -1,0 +1,56 @@
+.navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        //a.brand(href="#")
+        //  Project name
+        .nav-collapse
+          ul.nav
+            li
+              a.a-navbar-button(onClick="goBack();")
+                image(src="./images/icons/Actions/go-previous-symbolic.png").image-navbar-button
+                span
+                  br
+                  | Back
+            li
+              a.a-navbar-button(onClick="goForward();")
+                image(src="./images/icons/Actions/go-next-symbolic.png").image-navbar-button
+                span
+                  br
+                  | Forward
+            li
+              a.a-navbar-button(onClick="goReload();")
+                image(src="./images/icons/Actions/view-refresh-symbolic.png").image-navbar-button
+                span
+                  br
+                  | Reload
+            li
+              a.a-navbar-button#FullscreenButton(active="false", onClick="switch_fullscreen();")
+                image(src="./images/icons/Actions/view-fullscreen-symbolic.png").image-navbar-button
+                span
+                  br
+                  | Fullscreen
+            li.divider-vertical
+            li.dropdown
+              a.dropdown-toggle.a-navbar-button(href="#", data-toggle="dropdown")
+                image(src="./images/icons/Categories/preferences-other-symbolic.png").image-navbar-button
+                b.caret
+                span
+                  br
+                  | Preferences
+              ul.dropdown-menu
+                li: a(href="#")
+                  | Action
+                li: a(href="#")
+                  | Another action
+                li: a(href="#")
+                  | Something else here
+                li.divider
+                li: a(href="#")
+                  | Separated link
+          form.navbar-search.pull-right(action="")
+            input.search-query.span2(type="text", placeholder="Search")
+          ul.nav

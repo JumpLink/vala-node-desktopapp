@@ -1,0 +1,15 @@
+doctype 5
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="Content-Script-Type", content="text/javascript")
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body(data-spy="scroll", data-target=".subnav", data-offset="50", data-twttr-rendered="true")
+    include navbar
+    block content
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/bootstrap.js')
+  script(src='/javascripts/webkit-communicate.js')
+  script(src='/javascripts/changes.js')

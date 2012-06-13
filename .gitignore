@@ -17,7 +17,7 @@ main
 core
 tmp
 
-views
+views/index.jade
 public/images
 images
 
